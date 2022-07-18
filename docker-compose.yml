@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  web:
+    build: ./docker/web
+    container_name: tcpj-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/tcpj
+    working_dir: /var/www/tcpj
+    privileged: true
+
+  db:
+    build: ./docker/db
+    container_name: tcpj-db
+    ports:
+      - "3306:3306"
+    # for m1 mac
+    # platform: linux/x86_64
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: tcpj_db
+      MYSQL_PASSWORD: tcpj_db
+      MYSQL_DATABASE: tcpj_db
+    volumes:
+      - db-data:/var/lib/mysql
+    
+volumes:
+  db-data:
+    driver: local
