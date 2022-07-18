@@ -1,0 +1,17 @@
+# ======== Emoji Prefix ========
+# 🎉  :tada: 初回commitもしくは、大きな機能追加
+# ✨  :sparkles: 新しい機能もしくは、部分的な機能追加
+# 👍  :+1: 機能改善
+# 🚀  :rocket: パフォーマンス改善
+# 🆙  :up: 依存パッケージなどのアップデート
+# 🔧  :wrench: 設定ファイル系の修正
+# 💄  :lipstick: UIや見た目に関わる修正・更新
+# ✏  :pencil2: タイポの修正
+# 📝  :memo: コメント・テキストドキュメントの更新
+# 🔥  :fire: コード・ファイルの削除
+# 🐛  :bug: バグ修正
+# ♻️  :recycle: リファクタリング
+# 🚨  :rotating_light: Rubocopなどのlinterの警告対応
+# 🚧  :construction: お試しcommit
+# 👮  :cop: セキュリティ関連の改善
+# 🚿  :shower: 不要な機能・使われなくなった機能の削除
